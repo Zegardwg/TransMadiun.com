@@ -307,7 +307,7 @@ footer {
 
 .carousel-item img {
     width: 80%;
-    height: 800px; /* Anda dapat menyesuaikan tinggi sesuai kebutuhan */
+    height: 1000px; /* Anda dapat menyesuaikan tinggi sesuai kebutuhan */
     object-fit: cover; /* Gambar akan dipotong untuk mengisi container tanpa mengubah rasio aspek */
     margin: 0 auto; /* Memusatkan gambar */
 }
@@ -502,4 +502,105 @@ footer {
         font-size: 1rem;
         color: #555;
         line-height: 1.6;
+      }
+
+      .timeline-section {
+        position: relative;
+        padding: 2rem 0;
+      }
+    
+      .timeline-header {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 10;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+    
+      .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem 0;
+      }
+    
+      .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 100%;
+        background-color: #ffd700;
+        z-index: 1;
+      }
+    
+      .timeline-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        z-index: 2;
+      }
+    
+      .timeline-item:nth-child(odd) {
+        align-items: flex-end;
+      }
+    
+      .timeline-item-content {
+        position: relative;
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        text-align: center;
+      }
+    
+      .timeline-item-content h2 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+    
+      .timeline-item-content p {
+        font-size: 0.95rem;
+        color: #666;
+      }
+    
+      .timeline-item-content img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+      }
+    
+      .timeline-dot {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: #ffd700;
+        border: 4px solid #fff;
+        border-radius: 50%;
+        z-index: 3;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    
+      /* Scroll beam */
+      .timeline-beam {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        background-color: #ffa500;
+        z-index: 0;
+        transition: height 0.3s ease-in-out;
       }

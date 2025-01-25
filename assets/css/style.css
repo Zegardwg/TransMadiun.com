@@ -1,46 +1,81 @@
-:root{
-    --pr-color : black;
+:root {
+    --pr-color: black;
 }
 
-
-body{
+body {
     font-family: "Poppins", sans-serif;
-    background-color:#fff;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-link{
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.nav-link {
     font-size: 17px;
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background-color: #f0f0f0;
-    color: #333; 
-    text-decoration: none; 
+    color: #333;
+    text-decoration: none;
     border-radius: 20px;
 }
-.button-secondery{
+
+/* Button Styles */
+.button-secondary {
     width: 120px;
     height: 40px;
     background-color: #fff;
     color: var(--pr-color);
     border: none;
     font-size: 16px;
-    font-style: 700;
+    font-weight: 700;
     border-radius: 20px;
 }
 
-.btn-primary{
+.btn-primary {
     width: 120px;
     height: 40px;
     background-color: transparent;
     color: #fff;
     border: none;
     font-size: 16px;
-    font-style: 700;
+    font-weight: 700;
     border-radius: 20px;
 }
+
+/* Navbar Styles */
+.navbar-brand img {
+    height: 50px;
+}
+
+.auth-links {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.auth-links a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    background-color: #0056b3;
+}
+
+/* Heading Styles */
 .heading {
     padding-top: 2rem;
     text-align: center;
@@ -54,32 +89,417 @@ body{
 .heading h1 {
     font-size: 2rem;
 }
+
+/* Order/Kendaraan Section Styles */
 .kendaraan-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .box {
-    flex-basis: 30%; 
-    margin: 20px; 
-    text-align: center; 
+}
+
+.box {
+    flex-basis: 30%;
+    margin: 20px;
+    text-align: center;
     margin-top: 50px;
-  }  
-  .box i {
+}
+
+.box i {
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  .box h2 {
-    font-weight: bold; 
-    margin-bottom: 10px; 
-  }
-  
-  .box p {
-    font-size: 16px; 
-  }
+}
 
-.banner-fluid{
+.box h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+}
+
+/* Hero Section */
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Marquee Styles */
+.marquee {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Banner Fluid */
+.banner-fluid {
     background: url(/aset/sec_jadwal.png);
 }
+
+/* Form Styles */
+.form-request-wrap {
+    background-color: #f5f5f5;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form-request {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-label-outside {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-input, .select-filter {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* General Footer Styling */
+footer {
+    background: linear-gradient(135deg, #fff176, #ffd54f);
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 0;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box__footer {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box__footer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box__footer h2 {
+    color: #ff8f00;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffd54f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.box__footer a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    margin: 8px 0;
+    font-size: 1rem;
+    transition: color 0.3s, padding-left 0.3s;
+}
+
+.box__footer a:hover {
+    color: #ff6f00;
+    padding-left: 10px;
+}
+
+.box__footer .terms p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Social Media Icons */
+.box__footer a i {
+    margin-right: 10px;
+    color: #ff6f00;
+    font-size: 1.3rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.box__footer a:hover i {
+    color: #ff8f00;
+    transform: rotate(10deg);
+}
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+    color: black;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 5px 0; /* Kurangi padding untuk membuat navbar lebih tipis */
+}
+
+.navbar .navbar-brand img {
+    height: 50px; /* Kurangi tinggi logo agar navbar lebih tipis */
+}
+
+.navbar-nav .nav-link {
+    padding: 5px 10px; /* Kurangi padding pada link navbar */
+}
+
+.auth-links {
+    text-align: center;
+    margin: 10px 0; /* Kurangi margin untuk membuatnya lebih tipis */
+}
+
+.auth-links a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 15px; /* Kurangi padding pada link auth */
+    border-radius: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    background-color: #0056b3;
+}
+
+#hero {
+    background-image: url('assets/images/bg.jpeg');
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.marquee {
+    font-weight: bold;
+    padding: 10px; 
+}
+
+.marquee marquee {
+    display: block; 
+}
+
+.carousel-item img {
+    width: 80%;
+    height: 800px; /* Anda dapat menyesuaikan tinggi sesuai kebutuhan */
+    object-fit: cover; /* Gambar akan dipotong untuk mengisi container tanpa mengubah rasio aspek */
+    margin: 0 auto; /* Memusatkan gambar */
+}
+
+.auth-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.auth-links a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    background-color: #0056b3;
+}
+
+.form-request-wrap-modern {
+    background-color: #f5f5f5;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form-request-modern {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-request-modern h4 {
+    margin-bottom: 30px;
+}
+
+.form-request-modern.form-input {
+    margin-bottom: 20px;
+}
+
+.form-request-modern.form-button {
+    margin-top: 30px;
+}
+
+.rd-mailform {
+    margin-top: 30px;
+}
+
+
+.form-label-outside {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-wrap {
+  margin-bottom: 20px;
+}
+
+.select-filter {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="%23ccc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 5l6 6 6-6"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-filter:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.select-filter::-ms-expand {
+  display: none;
+}
+.rd-mailform {
+  margin-top: 30px;
+}
+
+.form-label-outside {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-wrap {
+  margin-bottom: 20px;
+}
+
+.form-wrap-inline {
+  display: inline-block;
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.select-filter {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="%23ccc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 5l6 6 6-6"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-filter:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.select-filter::-ms-expand {
+  display: none;
+}
+
+/* Add some space between the two select elements */
+.col-sm-12:nth-child(2) {
+  margin-top: 20px;
+}
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide-caption {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  transform: translate(-50%, 85%);
+  text-align: center;
+  color: #fff; /* or any other color you prefer */
+}
+
+
+/* TESSSSS */
+
+      /* Parallax Section */
+      .parallax {
+        background-image: url('assets/images/bg.jpeg');
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+      }
+
+      .parallax h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        margin-bottom: 0.5rem;
+      }
+
+      .parallax p {
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      .content-section {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+      }
+
+      .content-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .content-section p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+      }
